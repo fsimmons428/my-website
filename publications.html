@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publications</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: #c5a77e;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 15px;
+            background-color: #856e50;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background-color: #856e50;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 900 px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .intro {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+
+        .pub-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        
+        .pub-item {
+            display: block;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            border: 1px solid #d0c8bd;
+            text-decoration: none;
+            color: #2f2f2f;
+            border-radius: 4px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .pub-item:hover {
+            background-color: #f0ece6;
+            transform: translateY(-2px)
+        }
+
+        footer {
+            background-color: #856e50;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 50px;
+            border-top: 1px solid #d0c8bd;
+            font-size: 0.9em;
+            color: #2f2f2f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="photos.html">Photos</a>
+        <a href="sps.html">SPS</a>
+    </nav>
+
+    <div class="content">
+      
+        <h1>Publications</h1>
+
+        <p class="intro">
+            Below is a selection of my published research and other articles.
+        </p>
+
+        <div class="pub-list">
+            <a class="pub-item" href="https://ui.adsabs.harvard.edu/abs/2025AJ....170...10E/abstract" target="_blank">
+                <em>Variable Polarization of WR 31a: Binary Companion or Corotating Interaction Region?</em> Erba et al. (2025)
+            </a>
+
+            <a class="pub-item" href="https://aas.org/posts/news/2025/04/empowered-advocacy-my-experience-2025-aaas-case-workshop" target="_blank">
+                <em>Empowered by Advocacy: My Experience at the 2025 AAAS CASE Workshop</em> 
+            </a>
+
+            <a class="pub-item" href="https://students.aip.org/observer/picture-a-physicist" target="_blank"> 
+                <em>Picture a Physisist </em> 
+            </a>
+
+        </div>
+    </div>
+    <footer>Faith Simmons | Physics & Astronomy</footer>
+
+
+</body>
+<html>

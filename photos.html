@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photos</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: #c5a77e;
+            line-height: 1.5;
+        }
+
+        nav {
+            padding: 15px;
+            background-color:#856e50;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background-color: #856e50;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        .photo img{
+            max-width: 800px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo figcaption{
+            margin-top: 6px;
+            font-size: 0.85em;
+            color: #555;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        .photo-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        footer {
+            background-color:#856e50;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 50px;
+            border-top: 1px solid #d0c8bd;
+            font-size: 0.9em;
+            color: #2f2f2f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="photos.html">Photos</a>
+        <a href="sps.html">SPS</a>
+    </nav>
+
+    <div class="content">
+      
+        <h1>Photos</h1>
+
+        <p>Below you will find some photos from my travels, hobbies, and family! </p>
+    </div>
+
+    <div class="photo-row">
+
+        <figure class="photo">
+            <img src="images/invert.jpg">
+            <figcaption>Aerial Silks at ETSU</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/race.JPG">
+            <figcaption>Racing in the Women's Pro class</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/trap.jpg">
+            <figcaption>An outdoor trapeze performance</figcaption>
+        </figure>
+
+    </div>
+
+     <div class="photo-row">
+
+        <figure class="photo">
+            <img src="images/hikinh.jpeg">
+            <figcaption>My husband, Evan, and I on a hiking trip</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/loki.jpeg">
+            <figcaption>Our pup, Loki!</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/hipkey.jpg">
+            <figcaption>Aerial graduation photos at ETSU</figcaption>
+        </figure>
+
+    </div>
+
+     <div class="photo-row">
+
+        <figure class="photo">
+            <img src="images/wedding.jpg">
+            <figcaption>Our private wedding ceremony in Crested Butte, CO</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/grad.jpg">
+            <figcaption>Graduation photos from ETSU</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/aas.jpg">
+            <figcaption>My mentor, peer, and I at the 245th AAS meeting</figcaption>
+        </figure>
+
+    </div>
+
+     <div class="photo-row">
+
+        <figure class="photo">
+            <img src="images/award.jpeg">
+            <figcaption>Receiving an award for Outstanding Academic Organization President</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/capitol.jpg">
+            <figcaption>Standing outside of the Capitol Building during the CASE workshop</figcaption>
+        </figure>
+
+        <figure class="photo">
+            <img src="images/zone-poster.jpeg">
+            <figcaption>Presenting my poster at the Zone meeting</figcaption>
+        </figure>
+
+    </div>
+
+    <footer> Faith Simmons | Physics & Astronomy </footer>
+
+</body>
+<html>
