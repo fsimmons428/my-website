@@ -8,23 +8,24 @@
         body {
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
-            background-color: #ccc9c5;
-             min-height: 100vh;
+            min-height: 100vh;
+            background-color: #ccc9c5
+            color: #2f2f2f;
+            line-height: 1.6;
         }
 
         nav {
             padding: 15px;
-            background-color: #6b705c;
+            background-color: #6b705c; /* green */
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
         }
 
         nav a {
-            margin-right: 20px;
+            margin: 0 20px;
             text-decoration: none;
-            color: black;
+            color: #2f2f2f;
             font-weight: bold;
-            background-color:#6b705c;
         }
 
         nav a:hover {
@@ -33,19 +34,52 @@
 
         .content {
             max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 30px 20px;
         }
 
-        .embed-cv {
-            width: 100%;            
-            max-width: 100%;        
-            height: 1200px;         
-            display: block;         
-            box-sizing: border-box
-            height: 90vh;
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            border-radius: 6px;
+            background-color: #f4f3f1; /* soft cream */
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
         }
 
+        .section.alt {
+            background-color: #e9e7e2; /* darker cream */
+        }
+
+        .section.green {
+            background-color: #dde1d6; /* green-tinted cream */
+        }
+
+        .section h2 {
+            margin-top: 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #6b705c;
+            color: #2f2f2f;
+        }
+        h1 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: #1f3d2b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
 
         footer {
             background-color: #6b705c;
@@ -71,11 +105,56 @@
     </nav>
 
     <div class="content">
-    
+
         <h1>Cirriculum Vitae</h1>
-        <embed src="Simmons_CV.pdf" type="application/pdf" class="embed-cv">
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>2021-2025    <strong>East Tennessee State University</strong>
+                            Bachelor of Science in Physics</p>
+        </div>
+
+        <div class="section alt">
+            <h2>Research Experience</h2>
+            <p>2024-2025    <strong>Advanced Research Internship</strong><br>
+	                        Completed a project on polarization trends in massive stars<br>
+            Summer 2025    <strong>Independent Study: Studies of Exoplanet Transit Lightcurves</strong><br>
+                            HOlomon Photometric Software (HOPS)</p> 
+        </div>
+
+        <div class="section">
+            <h2>Leadership Roles</h2>
+            
+            <p>
+                2025-Current    <strong>Asociate Zone Counselor Representative</strong><br>
+                                I serve as the AZC Representative on the Executive Committee of the Society of Physics Students. I represent students nationwide as the only student voice on the committee. <br>
+                2025-Current    <strong>Associate Zone Counselor</strong><br>
+                                I was elected to represent Zone 8 as the Associate Zone Counselor on the National Council of the Society of Physics Students. There, I sit on a committee dedicated to increasing student belonging. <br>
+                2024-2025       <strong>Chapter President</strong><br>
+                                Prior to my election as AZC, I was the ETSU Chapter President of the Society of Physics Students. During my term, I established a chapter of the National Physics & Astronomy Honor Society, Sigma Pi Sigma, and hosted a Zone Meeting at ETSU. <br>
+            </p>
+        </div>
+
+        <div class="section green">
+            <h2>Teaching</h2>
+            <p>2024-Current    <strong>Private Tutor</strong><br>
+                                I tutor high school and undergraduate STEM courses, including General Physics.<br>
+            2022-2024          <strong>Substitute Teacher</strong><br>
+                                I worked as a substitute teacher in elementary and middle schools.</p>
+        </div>
+
+        <div class="section alt">
+            <h2>Awards & Honors</h2>
+            <ul>
+                <li>Outstanding Academic Organization President SUMMIT Award</li>
+                <li>Sigma Pi Sigma Leadership Scholarship</li>
+                <li>Physics Ambassador Scholarship</li>
+            </ul>
+        </div>
         
+
     </div>
+
 
     <footer>Faith Simmons | Physics & Astronomy </footer>
 
@@ -83,6 +162,7 @@
 
 </body>
 <html>
+
 
 
 
