@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cirriculum Vitae</title>
+    <title>Curriculum Vitae</title>
 
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
             min-height: 100vh;
-            background-color: #ccc9c5
+            background-color: #ccc9c5;
             color: #2f2f2f;
             line-height: 1.6;
         }
 
         nav {
             padding: 15px;
-            background-color: #6b705c; /* green */
+            background-color: #6b705c;
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
         }
@@ -42,16 +42,16 @@
             margin: 40px 0;
             padding: 30px;
             border-radius: 6px;
-            background-color: #f4f3f1; /* soft cream */
+            background-color: #f4f3f1;
             box-shadow: 0 1px 4px rgba(0,0,0,0.06);
         }
 
         .section.alt {
-            background-color: #e9e7e2; /* darker cream */
+            background-color: #e9e7e2;
         }
 
         .section.green {
-            background-color: #dde1d6; /* green-tinted cream */
+            background-color: #dde1d6;
         }
 
         .section h2 {
@@ -60,6 +60,7 @@
             border-bottom: 2px solid #6b705c;
             color: #2f2f2f;
         }
+
         h1 {
             margin-top: 0;
         }
@@ -91,6 +92,22 @@
             color: #2f2f2f;
         }
 
+        .entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .entry .date {
+            flex: 0 0 150px;
+            font-weight: bold;
+        }
+
+        .entry .role {
+            flex: 1;
+        }
     </style>
 </head>
 
@@ -106,44 +123,65 @@
 
     <div class="content">
 
-        <h1>Cirriculum Vitae</h1>
+        <h1>Curriculum Vitae</h1>
 
         <div class="section">
             <h2>Education</h2>
-            <p>2021-2025    <strong>East Tennessee State University</strong>
-                            Bachelor of Science in Physics</p>
+            <p class="entry">
+                <span class="date">2021-2025</span>
+                <span class="role"><strong>East Tennessee State University</strong></span><br>
+                Bachelor of Science in Physics
+            </p>
         </div>
 
         <div class="section alt">
             <h2>Research Experience</h2>
-            <p>2024-2025    <strong>Advanced Research Internship</strong><br>
-	                        Completed a project on polarization trends in massive stars<br>
-            Summer 2025    <strong>Independent Study: Studies of Exoplanet Transit Lightcurves</strong><br>
-                            HOlomon Photometric Software (HOPS)</p> 
+            <p class="entry">
+                <span class="date">2024-2025</span>
+                <span class="role"><strong>Advanced Research Internship</strong></span><br>
+                Completed a project on polarization trends in massive stars
+            </p>
+            <p class="entry">
+                <span class="date">Summer 2025</span>
+                <span class="role"><strong>Independent Study: Studies of Exoplanet Transit Lightcurves</strong></span><br>
+                Holomon Photometric Software (HOPS)
+            </p>
         </div>
 
         <div class="section">
             <h2>Leadership Roles</h2>
-            
-            <p>
-                2025-Current    <strong>Asociate Zone Counselor Representative</strong><br>
-                                I serve as the AZC Representative on the Executive Committee of the Society of Physics Students. I represent students nationwide as the only student voice on the committee. <br>
-                2025-Current    <strong>Associate Zone Counselor</strong><br>
-                                I was elected to represent Zone 8 as the Associate Zone Counselor on the National Council of the Society of Physics Students. There, I sit on a committee dedicated to increasing student belonging. <br>
-                2024-2025       <strong>Chapter President</strong><br>
-                                Prior to my election as AZC, I was the ETSU Chapter President of the Society of Physics Students. During my term, I established a chapter of the National Physics & Astronomy Honor Society, Sigma Pi Sigma, and hosted a Zone Meeting at ETSU. <br>
+            <p class="entry">
+                <span class="date">2025-Current</span>
+                <span class="role"><strong>Associate Zone Counselor Representative</strong></span><br>
+                I serve as the AZC Representative on the Executive Committee of the Society of Physics Students. I represent students nationwide as the only student voice on the committee.
+            </p>
+            <p class="entry">
+                <span class="date">2025-Current</span>
+                <span class="role"><strong>Associate Zone Counselor</strong></span><br>
+                Elected to represent Zone 8 as Associate Zone Counselor on the National Council of the Society of Physics Students. Sit on a committee dedicated to increasing student belonging.
+            </p>
+            <p class="entry">
+                <span class="date">2024-2025</span>
+                <span class="role"><strong>Chapter President</strong></span><br>
+                Prior to my election as AZC, I was ETSU Chapter President of the Society of Physics Students. Established Sigma Pi Sigma chapter and hosted a Zone Meeting at ETSU.
             </p>
         </div>
 
-        <div class="section green">
+        <div class="section alt">
             <h2>Teaching</h2>
-            <p>2024-Current    <strong>Private Tutor</strong><br>
-                                I tutor high school and undergraduate STEM courses, including General Physics.<br>
-            2022-2024          <strong>Substitute Teacher</strong><br>
-                                I worked as a substitute teacher in elementary and middle schools.</p>
+            <p class="entry">
+                <span class="date">2024-Current</span>
+                <span class="role"><strong>Private Tutor</strong></span><br>
+                I tutor high school and undergraduate STEM courses, including General Physics.
+            </p>
+            <p class="entry">
+                <span class="date">2022-2024</span>
+                <span class="role"><strong>Substitute Teacher</strong></span><br>
+                Worked as a substitute teacher in elementary and middle schools.
+            </p>
         </div>
 
-        <div class="section alt">
+        <div class="section">
             <h2>Awards & Honors</h2>
             <ul>
                 <li>Outstanding Academic Organization President SUMMIT Award</li>
@@ -151,26 +189,10 @@
                 <li>Physics Ambassador Scholarship</li>
             </ul>
         </div>
-        
 
     </div>
 
-
-    <footer>Faith Simmons | Physics & Astronomy </footer>
-
-
+    <footer>Faith Simmons | Physics & Astronomy</footer>
 
 </body>
-<html>
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
